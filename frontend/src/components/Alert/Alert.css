@@ -1,0 +1,69 @@
+.custom-alert {
+
+  width: 100%;
+
+  padding: 14px 18px;
+
+  border-radius: 8px;
+
+  margin-bottom: 20px;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  animation: fadeIn 0.3s ease;
+}
+
+/*
+|--------------------------------------------------------------------------
+| SUCESSO
+|--------------------------------------------------------------------------
+*/
+
+.custom-alert.success {
+
+  background: rgba(0, 255, 136, 0.1);
+
+  border: 1px solid #00ff88;
+
+  color: #00ff88;
+}
+
+/*
+|--------------------------------------------------------------------------
+| ERRO
+|--------------------------------------------------------------------------
+*/
+
+.custom-alert.error {
+
+  background: rgba(255, 0, 0, 0.1);
+
+  border: 1px solid #ff6b6b;
+
+  color: #ff6b6b;
+}
+
+/*
+|--------------------------------------------------------------------------
+| ANIMAÇÃO
+|--------------------------------------------------------------------------
+*/
+
+@keyframes fadeIn {
+
+  from {
+
+    opacity: 0;
+
+    transform: translateY(-10px);
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}

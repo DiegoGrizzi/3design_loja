@@ -1,0 +1,75 @@
+.logo {
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 35px;
+}
+
+.logo-square {
+
+  width: 30px;
+  height: 30px;
+
+  border: 2px solid #00d9ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-square div {
+
+  width: 12px;
+  height: 12px;
+
+  background: #00d9ff;
+}
+
+.logo h1 {
+
+  color: #00d9ff;
+
+  font-size: 40px;
+}
+
+.logo-number {
+
+  color: white;
+}
+
+.logo-image {
+
+  width: 220px;
+
+  object-fit: contain;
+}
+
+.auth-links {
+
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #8a8a8a;
+
+  font-size: 14px;
+}
+
+.auth-links a {
+
+  color: #00d9ff;
+
+  text-decoration: none;
+
+  margin-left: 5px;
+
+  transition: 0.3s;
+}
+
+.auth-links a:hover {
+
+  opacity: 0.8;
+}

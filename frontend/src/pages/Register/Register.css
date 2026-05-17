@@ -1,0 +1,48 @@
+.logo {
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 35px;
+}
+
+.logo-square {
+
+  width: 30px;
+  height: 30px;
+
+  border: 2px solid #00d9ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-square div {
+
+  width: 12px;
+  height: 12px;
+
+  background: #00d9ff;
+}
+
+.logo h1 {
+
+  color: #00d9ff;
+
+  font-size: 40px;
+}
+
+.logo-number {
+
+  color: white;
+}
+
+.logo-image {
+
+  width: 220px;
+
+  object-fit: contain;
+}

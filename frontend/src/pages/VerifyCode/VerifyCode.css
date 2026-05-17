@@ -1,0 +1,40 @@
+.code-container {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.code-input {
+
+  width: 60px;
+  height: 70px;
+
+  background: #111;
+
+  border: 1px solid #222;
+
+  border-radius: 10px;
+
+  color: white;
+
+  text-align: center;
+
+  font-size: 28px;
+
+  transition: 0.3s;
+}
+
+.code-input:focus {
+
+  outline: none;
+
+  border-color: #00d9ff;
+
+  box-shadow:
+    0 0 10px #00d9ff;
+}
