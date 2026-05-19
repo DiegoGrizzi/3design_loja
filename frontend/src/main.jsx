@@ -8,6 +8,8 @@ import {
 
 import App from './App'
 
+import './styles/global.css'
+
 ReactDOM.createRoot(
   document.getElementById('root')
 ).render(

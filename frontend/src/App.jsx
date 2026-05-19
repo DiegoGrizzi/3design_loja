@@ -1,14 +1,15 @@
 import {
   Routes,
-  Route,
-  Navigate
+  Route
 } from 'react-router-dom'
 
-import Register from './pages/Register/Register'
-import VerifyCode from './pages/VerifyCode/VerifyCode'
-import Login from './pages/Login/Login'
+import Home from './pages/Home/Home'
 
-import './styles/global.css'
+import Register from './pages/Register/Register'
+
+import VerifyCode from './pages/VerifyCode/VerifyCode'
+
+import Login from './pages/Login/Login'
 
 function App() {
 
@@ -17,8 +18,8 @@ function App() {
     <Routes>
 
       <Route
-        path="/login"
-        element={<Login />}
+        path="/"
+        element={<Home />}
       />
 
       <Route
@@ -32,10 +33,8 @@ function App() {
       />
 
       <Route
-        path="*"
-        element={
-          <Navigate to="/login" />
-        }
+        path="/login"
+        element={<Login />}
       />
 
     </Routes>

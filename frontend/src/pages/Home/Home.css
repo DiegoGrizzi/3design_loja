@@ -1,0 +1,189 @@
+/*
+|--------------------------------------------------------------------------
+| HOME
+|--------------------------------------------------------------------------
+*/
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+
+  background: black;
+}
+
+/*
+|--------------------------------------------------------------------------
+| HERO
+|--------------------------------------------------------------------------
+*/
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 120px;
+
+  overflow: hidden;
+
+  opacity: 60%;
+
+  background:
+    url('/images/hero-bg.png')
+    center/cover no-repeat;
+}
+
+/*
+|--------------------------------------------------------------------------
+| OVERLAY
+|--------------------------------------------------------------------------
+*/
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(0,0,0,0.95),
+      rgba(0,0,0,0.7),
+      rgba(0,0,0,0.92)
+    );
+}
+
+/*
+|--------------------------------------------------------------------------
+| CONTENT
+|--------------------------------------------------------------------------
+*/
+
+.hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 650px;
+}
+
+.hero-mini-title {
+  color: #00d9ff;
+
+  font-size: 12px;
+  letter-spacing: 4px;
+
+  display: inline-block;
+
+  margin-bottom: 25px;
+}
+
+.hero h1 {
+  font-size: 86px;
+  line-height: 90px;
+
+  margin-bottom: 30px;
+
+  color: white;
+}
+
+.hero h1 span {
+  color: #00d9ff;
+}
+
+.hero p {
+  color: #8a8a8a;
+
+  font-size: 20px;
+  line-height: 36px;
+
+  margin-bottom: 40px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| BUTTON
+|--------------------------------------------------------------------------
+*/
+
+.hero button {
+  width: 280px;
+  height: 62px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #00d9ff;
+
+  color: black;
+
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 20px #00d9ff;
+}
+
+/*
+|--------------------------------------------------------------------------
+| STATS
+|--------------------------------------------------------------------------
+*/
+
+.hero-stats {
+  display: flex;
+  gap: 60px;
+
+  margin-top: 80px;
+}
+
+.hero-stats h2 {
+  color: #00d9ff;
+
+  margin-bottom: 8px;
+}
+
+.hero-stats span {
+  color: #777;
+
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| RESPONSIVO
+|--------------------------------------------------------------------------
+*/
+
+@media (max-width: 900px) {
+
+  .hero {
+    padding: 0 30px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+    line-height: 58px;
+  }
+
+  .hero p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .hero-stats {
+    gap: 25px;
+  }
+}
